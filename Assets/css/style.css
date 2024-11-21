@@ -1,0 +1,277 @@
+*,
+html,
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+/* Header START */
+header{
+    width: 100%;
+}
+
+header nav{
+    padding: 15px;
+    margin: 50px;
+    border-radius: 20px;
+    background-color: #E7E7E7;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+header nav ul li{
+    list-style-type: none;
+    align-content: center;
+}
+
+header nav ul li a{
+    color: black;
+    text-decoration: none;
+    margin: 0 5px 5px 5px;
+    padding: 10px;
+}
+
+
+    header nav ul li .judul{
+        color: black;
+    }
+/* Header END */
+
+
+
+
+
+/* Hero START */
+.hero{
+    width: 100%;
+
+    min-height: 50%;
+    max-height: 100%;
+
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/475/209/small/grey-abstract-background-wave-object-free-vector.jpg');
+    /* background-image: url('https://www.compilatio.net/media/cache/section_background/2020/11/3592-home-formes-prefooter.png'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero .container{
+    padding: 10px;
+}
+
+.hero .container ul{
+    display: flex;
+    justify-content: center;
+}
+
+.hero .container .hero-text{
+    text-align: center;
+    margin: 100px;
+} 
+
+.hero .container h1{
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+
+.hero .container p{
+    color: black;
+    margin: 10px 0 0 0;
+}
+/* Hero ENd */
+
+
+
+
+
+
+
+
+/* Main START */
+    main{
+        width: 100%;
+    }
+
+    main .container{
+        padding: 10px;
+    }
+
+    main .container ul{
+        background-color: #F9F9F9;
+    }
+/* Main END */
+
+
+
+
+/* Sidebar START */
+    aside{
+        width: 100%;
+    }
+
+    aside .container{
+        padding: 10px;
+    }
+
+    aside .container ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card-1{
+        width: 100%;
+        background-color: white;
+    }
+
+    .card-1 .container{
+        padding: 10px;
+        
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-1 .container img{
+        min-width: 100px;
+        max-width: 160px;
+    }
+
+    .card-1 .container .information{
+        padding: 10px;
+
+        min-width: 100px;
+        max-width: 200px;
+    }
+
+    .card-1 .container .information h2{
+
+    }
+
+    .card-1 .container .information p{
+        font-size: 14px;
+    }
+
+    
+/* Sidebar END */
+
+
+
+
+/* Article START */
+    article{
+        width: 100%;
+    }
+
+    article .container{
+        padding: 10px;
+    }
+
+    article .container ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    .main .container ul .wrap{
+        min-width: 100px;
+        max-width: 800px;
+    }
+
+    .main .container ul .wrap ul{
+        padding: 10px;
+    }
+
+    .main .container ul .wrap ul a{
+        color: black;
+    }
+
+    .main .container ul .wrap ul img{
+        min-width: 50%;
+        max-width: 100%;
+
+
+    }
+/* Article END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (min-width: 767px){
+    main .container ul{
+
+    }
+
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+    main .container ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+
+
+
+@media( min-width: 1024px){
+    header nav{
+        padding: 15px;
+        margin: unset;
+        border-radius: unset;
+        background-color: unset;
+    }
+    
+    main .container ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    aside{
+        order: 2;
+        flex: 1;
+    }
+
+    article{
+        order: 1;
+        flex: 3;
+    }
+
+
+
+
+
+
+
+
+    .card-1 .container img{
+        border-radius: 100px;
+    }
+
+}
+/* Responsive */
