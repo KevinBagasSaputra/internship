@@ -6,207 +6,178 @@ body{
     font-family: Poppins, sans-serif;
 }
 
-/* Header START */
-header{
-    width: 100%;
-}
-
-header nav{
-    padding: 15px;
-    margin: 50px;
-    border-radius: 20px;
-    background-color: #E7E7E7;
-}
-
-header nav ul{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap-reverse;
-}
-
-header nav ul li{
-    list-style-type: none;
-    align-content: center;
-}
-
-header nav ul li a{
-    color: black;
-    text-decoration: none;
-    margin: 0 5px 5px 5px;
-    padding: 10px;
-}
-
-
-    header nav ul li .judul{
-        color: black;
-    }
-/* Header END */
-
-
-
-
-
-/* Hero START */
-.hero{
-    width: 100%;
-
-    min-height: 50%;
-    max-height: 100%;
-
-    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/475/209/small/grey-abstract-background-wave-object-free-vector.jpg');
-    /* background-image: url('https://www.compilatio.net/media/cache/section_background/2020/11/3592-home-formes-prefooter.png'); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.hero .container{
-    padding: 10px;
-}
-
-.hero .container ul{
-    display: flex;
-    justify-content: center;
-}
-
-.hero .container .hero-text{
-    text-align: center;
-    margin: 100px;
-} 
-
-.hero .container h1{
-    color: black;
-    font-size: 2.5rem;
-    font-weight: 600;
-}
-
-
-.hero .container p{
-    color: black;
-    margin: 10px 0 0 0;
-}
-/* Hero ENd */
-
-
-
-
-
-
-
-
-/* Main START */
-    main{
+/*  NAVBAR START */
+    header{
         width: 100%;
+        background-color: #A6AEBF;
     }
 
-    main .container{
+    header nav{
         padding: 10px;
     }
 
-    main .container ul{
-        background-color: #F9F9F9;
-    }
-/* Main END */
-
-
-
-
-/* Sidebar START */
-    aside{
-        width: 100%;
+    header nav ul{
+        display: flex;
+        justify-content: space-around;
+        display: flex;
     }
 
-    aside .container{
+    header nav ul li{
+        list-style-type: none;
+        align-content: center;
+    }
+
+    header nav ul li a{
+        color: white;
+        text-decoration: none;
         padding: 10px;
     }
+/*  NAVBAR END */
 
-    aside .container ul{
+
+/* HERO START */
+    header .hero{
+        width: 100%;
+        background-color: #A6AEBF;
+    }
+
+    header .hero .container{
+        padding: 50px;
+    }
+
+    header .hero .container ul{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+
+        padding: 50px;
     }
 
-    .card-1{
-        width: 100%;
-        background-color: white;
+    header .hero .container ul .block-center{
+        display: block;
+        text-align: center;
     }
 
-    .card-1 .container{
-        padding: 10px;
-        
-        display: flex;
-        justify-content: center;
+    header .hero .container ul h2{
+        font-size: 2rem;
+        color: white;
     }
-
-    .card-1 .container img{
-        min-width: 100px;
-        max-width: 160px;
+    header .hero .container ul p{
+        color: white;
+        margin: 15px;
     }
-
-    .card-1 .container .information{
-        padding: 10px;
-
-        min-width: 100px;
-        max-width: 200px;
-    }
-
-    .card-1 .container .information h2{
-
-    }
-
-    .card-1 .container .information p{
-        font-size: 14px;
-    }
-
-    
-/* Sidebar END */
+/* HERO END */
 
 
+/*  START */
+main{
+    width: 100%;
+    background-color: #A6AEBF;
+}
+
+    /* SIDEBAR START */
+        aside{
+            width: 100%;
+
+            flex: 1;
+            order: 1;
+        }
+
+        aside .container{
+            padding: 10px;
+        }
+
+        aside .container ul{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
 
-/* Article START */
-    article{
-        width: 100%;
-    }
+            /* Card-1  */
+                aside .container ul .card-1{
+                    width: 100%;
+                }
 
-    article .container{
-        padding: 10px;
-    }
+                aside .container ul .card-1 .container{
+                    padding: 10px;
+                    display: flex;
+                }
 
-    article .container ul{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+                aside .container ul .card-1 .container img{
+                    min-width: 50px;
+                    max-width: 200px;
+
+                    min-height: 100px;
+                    max-height: 200px;
+                    object-fit: cover;
+                    border-radius: 100px;
+                }
+                aside .container ul .card-1 .container .information{
+                    min-width: 100px;
+                    max-width: 250px;
+                    padding: 10px;
+                }
+                aside .container ul .card-1 .container .information h3{
+                    color: black;
+                }
+                aside .container ul .card-1 .container .information p{
+                    color: black;
+                }
+
+                aside .container ul .card-1 .container .information .social-group{
+                    padding: 10px;
+                }
+                aside .container ul .card-1 .container .information .social-group a{
+                    color: black;
+                }
+            /* Card-1  */
+
+    /* SIDEBAR END */
 
 
-    .main .container ul .wrap{
-        min-width: 100px;
-        max-width: 800px;
-    }
-
-    .main .container ul .wrap ul{
-        padding: 10px;
-    }
-
-    .main .container ul .wrap ul a{
-        color: black;
-    }
-
-    .main .container ul .wrap ul img{
-        min-width: 50%;
-        max-width: 100%;
 
 
-    }
-/* Article END */
+    /* ARTICLE START */
+        article{
+            width: 100%;
+
+            flex: 3;
+            order: 1;
+        }
+
+        article .container{
+            padding: 10px;
+        }
+
+        article .container ul{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+
+            /* Content  */
+                article .container ul .content{
+                    width: 100%;
+                }
+
+                article .container ul .content .container{
+                    padding: 10px;
+                }
+
+                article .container ul .content .container img{
+                    min-width: 50%;
+                    max-width: 100%;
+                }
+            /* Content  */
 
 
 
+    /* ARTICLE END */
 
 
-
-
+/*  EMD */
 
 
 
@@ -215,21 +186,12 @@ header nav ul li a{
 
 /* Responsive */
 @media (min-width: 767px){
-    main .container ul{
-
-    }
-
 
 }
 
 
 
 @media (min-width: 768px) and (max-width: 1023px){
-    main .container ul{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
 
 }
 
@@ -239,19 +201,6 @@ header nav ul li a{
 
 
 @media( min-width: 1024px){
-    header nav{
-        padding: 15px;
-        margin: unset;
-        border-radius: unset;
-        background-color: unset;
-    }
-    
-    main .container ul{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
     aside{
         order: 2;
         flex: 1;
@@ -262,16 +211,6 @@ header nav ul li a{
         flex: 3;
     }
 
-
-
-
-
-
-
-
-    .card-1 .container img{
-        border-radius: 100px;
-    }
 
 }
 /* Responsive */
