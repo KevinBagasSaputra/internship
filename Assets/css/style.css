@@ -290,7 +290,7 @@ main .container{
                                 min-width: 50%;
                                 max-width: 100%;
 
-                                
+
                             }
                             /* output */
                     /* 2 */
@@ -357,3 +357,39 @@ main .container{
 
 }
 /* Responsive */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Arrow Up START */
+.arrow{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.arrow .container{
+    padding: 40px;
+}
+
+.arrow .container ul{
+    display: flex;
+    justify-content: end;
+}
+
+.arrow .container a{
+    color: white;
+    padding: 10px;
+    background-color: #2c33ff;
+}.arrow .container a:hover{
+    background-color: gray;
+}
+/* Arrow Up END */
