@@ -149,6 +149,46 @@ main .container{
                 }
             /* Card-1  */
 
+            /* Card-2 */
+                aside .container ul .card-2{
+                    width: 100%;
+                    margin: 20px 0;
+                    box-shadow: 3px 2px 10px 1px black;
+                }
+
+                aside .container ul .card-2 .container{
+                    padding: 10px;
+                }
+
+                aside .container ul .card-2 .container ul{
+                    display: flex;
+                    justify-content: left;
+                    flex-wrap: wrap;
+                }
+
+                
+                
+                aside .container ul .card-2 .container ul a{
+                    width: 100%;
+                    height: 70px;
+                    align-content: center;
+                    color: black;
+                    text-decoration: none;
+
+                    padding: 5px;
+                    margin: 10px 0;
+
+                    border: 1px solid black;
+                }
+
+                aside .container ul .card-2 .container ul a:hover{
+                    opacity: 50%;
+                }
+                aside .container ul .card-2 .container ul a sup{
+                    color: #2c33ff;
+                }
+            /* Card-2 */
+
     /* SIDEBAR END */
 
 
@@ -165,7 +205,7 @@ main .container{
         }
 
         article .container ul{
-            display: flex;
+            display: block;
             justify-content: center;
             flex-wrap: wrap;
         }
@@ -184,6 +224,8 @@ main .container{
             /* Content  */
                 article .container ul .content{
                     width: 100%;
+                    border: 1px solid black;
+
                 }
 
                 article .container ul .content .container{
@@ -191,6 +233,7 @@ main .container{
 
                     min-width: 100px;
                     max-width: 800px;
+
                 }
 
                 article .container ul .content .container img{
@@ -211,6 +254,46 @@ main .container{
                             padding: 10px;
                         }
                     /* PENDAHULUAN END */
+
+
+                    /* 2 */
+                        article .container ul .content .container ul .komponen{
+
+                        }
+
+                        article .container ul .content .container ul .komponen ul{
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                        }
+
+                        article .container ul .content .container ul .komponen ul .komponen-group{
+                            min-width: 100px;
+                            max-width: 150px;
+                        }
+
+                        article .container ul .content .container ul .komponen ul .komponen-group p{
+                            padding: unset;
+                        }
+
+                            /* sc */
+                            article .container ul .content .container ul .komponen ul .sc{
+                                min-width: 100px;
+                                max-width: 300px;
+
+                                min-height: 200px;
+                                max-height: 500px;
+                            }
+                            /* sc */
+                            /* output */
+                            article .container ul .content .container ul .komponen ul video{
+                                min-width: 50%;
+                                max-width: 100%;
+
+                                
+                            }
+                            /* output */
+                    /* 2 */
             /* Content  */
 
 
@@ -261,6 +344,16 @@ main .container{
         order: 1;
     }
 
+
+
+    article .container ul .content .container ul .komponen ul .sc{
+        min-width: 300px;
+        max-width: 400px;
+
+        min-height: 200px;
+        max-height: 400px;
+        object-fit: cover;
+    }
 
 }
 /* Responsive */
