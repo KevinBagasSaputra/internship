@@ -224,7 +224,6 @@ main .container{
             /* Content  */
                 article .container ul .content{
                     width: 100%;
-                    border: 1px solid black;
 
                 }
 
@@ -234,7 +233,10 @@ main .container{
                     min-width: 100px;
                     max-width: 800px;
 
+                    border: 1px solid black;
+                    margin: 50px 0;
                 }
+
 
                 article .container ul .content .container img{
                     min-width: 50%;
@@ -244,6 +246,22 @@ main .container{
                     max-height: 400px;
                     object-fit: cover;
                 }
+
+                /* Tags */
+                    article .container ul .content .container .flex{
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+
+                    article .container ul .content .container .flex li{
+                        list-style: none;
+                    }
+
+                    article .container ul .content .container .flex li a{
+                        text-decoration: underline white;
+                        text-underline-offset: 5px;
+                    }
+                /* Tags */
 
                     /* PENDAHULUAN START */
                         article .container ul .content .container ul h2{
@@ -256,9 +274,9 @@ main .container{
                     /* PENDAHULUAN END */
 
 
-                    /* 2 */
+                    /* KOMPONEN */
                         article .container ul .content .container ul .komponen{
-
+                            
                         }
 
                         article .container ul .content .container ul .komponen ul{
@@ -268,8 +286,10 @@ main .container{
                         }
 
                         article .container ul .content .container ul .komponen ul .komponen-group{
+                            color: white;
+
                             min-width: 100px;
-                            max-width: 150px;
+                            max-width: 133.5px;
                         }
 
                         article .container ul .content .container ul .komponen ul .komponen-group p{
@@ -293,7 +313,7 @@ main .container{
 
                             }
                             /* output */
-                    /* 2 */
+                    /* KOMPONEN */
             /* Content  */
 
 
@@ -343,7 +363,6 @@ main .container{
         flex: 3;
         order: 1;
     }
-
 
 
     article .container ul .content .container ul .komponen ul .sc{
