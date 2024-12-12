@@ -40,10 +40,7 @@ body{
 /* HERO START */
     header .hero{
         width: 100%;
-        background-image: url('../img/background/header.png');
-        background-repeat: no-repeat;
-        background-position-y: 78%;
-        background-size: cover;
+
     }
 
     header .hero .container{
@@ -77,7 +74,7 @@ body{
 /*  START */
 main{
     width: 100%;
-    background-color: white;
+    
 }
 
 main .container{
@@ -86,6 +83,8 @@ main .container{
     display: block;
     justify-content: center;
     flex-wrap: wrap;
+
+
 }
 
 
@@ -263,6 +262,20 @@ main .container{
                     }
                 /* Tags */
 
+
+                /* Wrap */
+                    article .container ul .content .container .wrap{
+                        margin: 10px 0 10px 25px;
+                    }
+
+                    article .container ul .content .container ol{
+                        margin: 10px 0 10px 40px;
+                    }
+                    article .container ul .content .container ol li{
+                        padding: 5px;
+                    }
+                /* Wrap */
+
                 /* Wokwi */
                     .wokwi a{
                         color: #2c33ff;
@@ -308,8 +321,6 @@ main .container{
                         }
 
                         article .container ul .content .container ul .komponen ul .komponen-group{
-                            color: white;
-
                             min-width: 100px;
                             max-width: 133.5px;
                         }
@@ -354,12 +365,26 @@ main .container{
 
 /* Responsive */
 @media (min-width: 767px){
+    header .hero{
+        width: 100%;
+        background-image: url('../img/background/headerv2.png');
+        background-repeat: no-repeat;
+        background-position-y: 78%;
+        background-size: cover;
+    }
 
 }
 
 
 
 @media (min-width: 768px) and (max-width: 1023px){
+    header .hero{
+        width: 100%;
+        background-image: url('../img/background/headerv2.png');
+        background-repeat: no-repeat;
+        background-position-y: 78%;
+        background-size: cover;
+    }
 
 }
 
@@ -369,6 +394,13 @@ main .container{
 
 
 @media( min-width: 1024px){
+    header .hero{
+        width: 100%;
+        background-image: url('../img/background/headerv2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     main .container{
         display: flex;
         justify-content: center;
@@ -386,6 +418,11 @@ main .container{
     article{
         flex: 3;
         order: 1;
+    }
+
+
+    article .container ul .content .container{
+        padding: 20px;
     }
 
 

@@ -86,6 +86,9 @@
                                         <a href="">Mengenal Prinsip Dasar Arduino<sup>[1]</sup></a>
                                         <a href="">Program Mematikan dan Menyalakan Lampu LED<sup>[2]</sup></a>
                                         <a href="">Program Variasi Lampu LED<sup>[3] & [4]</sup></a>
+                                        <a href="">Program lampu redup-terang, redup-terang <sup>[5]</sup></a>
+                                        <a href="">Program Frekwensi Buzzer untuk menghasilkan Nada <sup>[6]</sup></a>
+                                        <a href="">Program Buzzer lagu Orange - 7!!<sup>[7]</sup></a>
                                     </ul>
                                 </section>
                             </section>
@@ -135,16 +138,53 @@
                                                 </a>
                                         </div>
 
-                                        <p>Pada hari pertama magang, tim kami memulai dengan pengenalan dasar tentang Arduino. Kami mendalami lebih dalam tentang apa itu Arduino, konsep dasarnya, dan cara kerjanya.</p>
+                                        <p>Pada hari pertama Praktik Kerja Lapangan (PKL) di APKOMINDO, kami memulai dengan pengenalan dasar tentang Arduino. Kami mendalami lebih dalam tentang konsep dasar Arduino, apa itu Arduino, dan cara kerjanya.</p>
                                         <p>Bagi saya, itu adalah pengalaman yang membuka mata saat kami menjelajahi dunia mikrokontroler dan pemrograman. Para mentor membimbing kami melalui proses tersebut, memastikan bahwa kami memahami prinsip dan konsep penting Arduino. Pengalaman awal ini menjadi dasar yang kuat untuk proyek dan eksperimen kami di masa mendatang.</p>
-                                        <p>Saya harus katakan, saya cukup terpesona dengan kemampuan Arduino dan bagaimana Arduino dapat digunakan untuk membuat proyek inovatif. Saya ingin menerapkan pengetahuan dan keterampilan saya dalam proyek mendatang, dan saya bersyukur atas kesempatan untuk belajar dan berkembang ini.</p>
 
+                                        <div class="wrap">
+                                            <h4>1.	Anatomi Arduino</h4>
+                                            <p>Meskipun semua papan Arduino berbeda satu sama lain, ada beberapa komponen utama yang dapat ditemukan dihampir semua Arduino. Mari kita lihat gambar dibawah ini:</p>
+                                            <img src="Assets\img\article\d1\wrap\1_Anatomi_Arduino.png" alt="">
+
+                                            <ol>
+                                                <li>Mikrokontroler - ini adalah otak Arduino, dan merupakan komponen tempat kita memuat program. Anggap saja ini sebagai komputer kecil, yang dirancang untuk menjalankan sejumlah hal tertentu saja.</li>
+                                                <li>Port USB - digunakan untuk menghubungkan papan Arduino Anda ke komputer.</li>
+                                                <li>Chip USB ke Serial - USB ke Serial merupakan komponen penting, karena membantu menerjemahkan data yang berasal dari misalnya komputer ke mikrokontroler on-board. Inilah yang memungkinkan untuk memprogram papan Arduino dari komputer Anda.</li>
+                                                <li>Pin digital - pin yang menggunakan logika digital (0,1 atau LOW/HIGH). Umumnya digunakan untuk sakelar dan untuk menyalakan/mematikan LED.</li>
+                                                <li>Pin analog - pin yang dapat membaca nilai analog dalam resolusi 10 bit (0-1023).</li>
+                                                <li>Pin 5V / 3.3V - pin ini digunakan untuk memberi daya pada komponen eksternal.</li>
+                                                <li>GND - juga dikenal sebagaigroundBahasa Indonesia:negativeatau hanya-, digunakan untuk melengkapi suatu rangkaian, di mana level listriknya berada pada 0 volt.</li>
+                                                <li>VIN - singkatan dari Voltage In, tempat Anda dapat menghubungkan catu daya eksternal.</li>
+
+                                            </ol>
+
+                                            <h4>2. Konsep Dasar Arduino</h4>
+                                            <p>Ada beberapa konsep dasar yang perlu kamu ketahui tentang Arduino:</p>
+                                            <ol>
+                                                <li>Microcontroller (MCU) : MCU adalah otak dari sistem Arduino. Ini adalah bagian utama yang mengolah data dan menjalankan instruksi.</li>
+                                                <li>Input/Output (I/O) : I/O adalah proses transfer data antara MCU dengan komponen lainnya. Ada dua jenis I/O, yaitu input (masuk) dan output (keluar).</li>
+                                                <li>Circuit Board : Circuit board adalah papan sirkuit yang berisi komponen-komponen elektronika, termasuk MCU.</li>
+                                                <li>Programming : Programming adalah proses menulis instruksi untuk membuat sistem Arduino bekerja.</li>
+                                            </ol>
+
+                                            <h4>3. Apa itu Arduino</h4>
+                                            <p>Arduino adalah sebuah platform mikrokontroler yang digunakan untuk membuat proyek-proyek elektronik seperti robot, sensor, dan lain-lain. Mikrokontroler ini memiliki kemampuan mengolah data digital dan analog, serta dapat dihubungkan dengan berbagai jenis komponen.</p>
+
+                                            <h4>4. Cara Kerja Arduino</h4>
+                                            <ol>
+                                                <li>User Input : Pengguna memberikan input melalui tombol sensor, atau komponen lainnya.</li>
+                                                <li>MCU Mengolah Data : MCU menerima input dan mengolah data tersebut.</li>
+                                                <li>Output : Hasil output ditampilkan pada layar LCD, dihubungkan ke perangkat lain, atau digunakan sebagai sinyal.</li>
+                                                <li>Looping : Sistem Arduino dapat berulang-ulang melalui proses input-output untuk membuat sistem yang berkelanjutan.</li>
+                                            </ol>
+
+                                        </div>
 
 
                                         <p>Sebelum memulai praktiknya, terdapat beberapa komponen yang harus disediakan, berikut daftar komponen yang harus disediakan ;</p>
 
                                         <section class="komponen">
-                                            <ul style="background-color: #00999E;">
+                                            <ul>
 
                                                 <div class="komponen-group">
                                                     <img src="Assets\img\article\d1\1_Arduino_Uno_R3.jpg" alt="">
